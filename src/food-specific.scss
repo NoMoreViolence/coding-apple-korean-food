@@ -1,0 +1,46 @@
+.food-specific-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: 1px solid #dfe7f2;
+  border-radius: 0.5rem;
+
+  .food-specific-header {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+    > div:nth-child(1) {
+      margin-bottom: 0.5rem;
+      > span {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+    > div:nth-last-child(1) {
+      display: flex;
+      flex-direction: column;
+      > span:nth-child(1) {
+        margin-bottom: 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .food-specific-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+    > div:nth-child(1) {
+      > span:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

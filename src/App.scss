@@ -1,0 +1,52 @@
+#app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #app {
+    max-width: 720px;
+
+    #app-header {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      > span {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+
+    #app-food-card-container {
+      .food-card:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+      .food-card {
+        margin-bottom: 1rem;
+      }
+    }
+
+    #app-history-button {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      > button:nth-child(1) {
+        margin-right: 0.5rem;
+      }
+      > button:nth-last-child(1) {
+        margin-left: 0.5rem;
+      }
+      > button {
+        border: 1px solid #dfe7f2;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        color: #4287c9;
+        background-color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}

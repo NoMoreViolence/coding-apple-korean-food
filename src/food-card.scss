@@ -1,0 +1,24 @@
+.food-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfe7f2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  .food-card-name {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    > span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .food-card-content {
+    margin-bottom: 0.75rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}

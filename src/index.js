@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// index.js에서는 app을 직접적으로 로딩할 필요는 없어 졌습니다.
+// import App from './App';
+// 감싸준 RouterWrapper 컴포넌트를 넣어 줍니다.
+// 이미 RouterWrapper 컴포넌트가 App.js를 가지고 있습니다.
+import RouterWrapper from './router-wrapper';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// RouterWapper 컴포넌트 안에 이미 App.js가 존재합니다.
+ReactDOM.render(<RouterWrapper />, document.getElementById('root'));
